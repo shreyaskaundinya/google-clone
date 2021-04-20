@@ -1,0 +1,43 @@
+.search__form {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 75vw;
+    justify-content: center;
+    border: 1px solid lightgrey;
+    border-radius: 999px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 500px;
+}
+
+.search__formInput {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    outline-width: 0;
+}
+
+.search__formSearchIcon {
+    color: gray;
+}
+
+.search__buttons {
+    display: flex;
+    width: 100vw;
+    margin: 10px;
+    gap: 10px;
+    justify-content: center;
+    > button {
+        text-transform: inherit;
+        border: 1px solid white;
+        background-color: white;
+        color: black;
+    }
+}
+
+.search__buttonsHidden {
+    display: none;
+}

@@ -1,0 +1,106 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.home__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+    a {
+        text-decoration: inherit;
+        color: black;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.home__headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: unset;
+    justify-content: center;
+}
+
+.home__headerRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 13vw;
+    justify-content: center;
+    > .MuiSvgIcon-root {
+        margin-right: 20px;
+    }
+}
+
+.home__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 10% 0;
+    .home__bodyLogo {
+        object-fit: contain;
+        height: 100px;
+    }
+}
+
+@media (max-width: 640px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+
+    .home__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px;
+        align-items: center;
+        a {
+            text-decoration: inherit;
+            color: black;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .home__headerLeft {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        min-width: unset;
+        justify-content: center;
+    }
+
+    .home__headerRight {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        min-width: unset;
+        justify-content: center;
+        > .MuiSvgIcon-root {
+            margin-right: unset;
+        }
+    }
+
+    .home__body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 10% 0;
+        .home__bodyLogo {
+            object-fit: contain;
+            height: 100px;
+        }
+    }
+}

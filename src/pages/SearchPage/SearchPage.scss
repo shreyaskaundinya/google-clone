@@ -1,0 +1,160 @@
+.searchPage__header {
+    display: flex;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 30px;
+    border-bottom: 1px solid lightgrey;
+    background-color: white;
+    > .searchPage__headerBody > .Search > .search__form {
+        margin-top: 0px;
+        margin: unset;
+        max-width: 55vw;
+        flex: 1;
+    }
+    .searchPage__logo {
+        object-fit: contain;
+        height: 30px;
+        margin-top: 5px;
+        margin-right: 50px;
+    }
+}
+
+.searchPage__options {
+    display: flex;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    color: grey;
+    .searchPage__optionsLeft {
+        display: flex;
+        gap: 20px;
+    }
+    .searchPage__optionsRight {
+        display: flex;
+        gap: 20px;
+    }
+    .searchPage__option {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .MuiSvgIcon-root {
+            color: grey;
+        }
+    }
+}
+
+.searchPage__results {
+    margin: 30px 10px 10px 170px;
+    .searchPage__resultsCount {
+        color: grey;
+    }
+    .searchPage__result {
+        padding: 20px 0;
+        word-wrap: break-word;
+        .searchPage__resultLink {
+            text-decoration: none;
+            color: grey;
+
+            .searchPage__resultsLinkImg {
+                object-fit: contain;
+                height: 20px;
+                width: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    /* Target devices narrower than 640px. */
+    .searchPage__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        width: 100vw;
+        top: 0;
+        z-index: 1000;
+        padding: 30px;
+        border-bottom: 1px solid lightgrey;
+        background-color: white;
+        .searchPage__headerBody {
+            display: flex;
+            flex-direction: column;
+        }
+        > .searchPage__headerBody > .Search > .search__form {
+            margin-top: 0px;
+            margin: unset;
+            max-width: unset;
+            flex: unset;
+        }
+        .searchPage__logo {
+            object-fit: contain;
+            height: 30px;
+            margin-top: 5px;
+            margin-right: 50px;
+        }
+    }
+
+    .searchPage__options {
+        display: flex;
+        margin: 20px 0;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        color: grey;
+        .searchPage__optionsLeft {
+            display: flex;
+            gap: 20px;
+            div {
+                flex: 1;
+            }
+        }
+        .searchPage__optionsRight {
+            display: none;
+        }
+        .searchPage__option {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            .MuiSvgIcon-root {
+                display: none;
+                color: grey;
+            }
+        }
+    }
+
+    .searchPage__results {
+        margin: 30px 10px 10px 30px;
+        .searchPage__resultsCount {
+            color: grey;
+        }
+        .searchPage__result {
+            padding: 20px 0;
+            word-wrap: break-word;
+            .searchPage__resultLink {
+                text-decoration: none;
+                color: grey;
+
+                .searchPage__resultsLinkImg {
+                    object-fit: contain;
+                    height: 20px;
+                    width: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
