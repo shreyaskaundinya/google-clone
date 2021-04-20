@@ -91,29 +91,29 @@
             flex-direction: column;
         }
         > .searchPage__headerBody > .Search > .search__form {
-            margin-top: 0px;
             margin: unset;
-            max-width: unset;
-            flex: unset;
+            min-width: 90vw;
+            flex: 1;
         }
         .searchPage__logo {
             object-fit: contain;
-            height: 30px;
+            height: 40px;
             margin-top: 5px;
-            margin-right: 50px;
+            margin-right: unset;
         }
     }
 
     .searchPage__options {
         display: flex;
-        margin: 20px 0;
+        margin: 10px 0 0 0;
         flex-wrap: wrap;
         gap: 20px;
         justify-content: space-between;
         color: grey;
         .searchPage__optionsLeft {
             display: flex;
-            gap: 20px;
+            justify-content: space-evenly;
+            margin: 0 10px;
             div {
                 flex: 1;
             }
